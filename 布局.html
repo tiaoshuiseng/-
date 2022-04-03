@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box {
+            width: 100%;
+            height: 100%;
+            background-color: orange;
+          /*  display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 100px; */
+            display: flex;
+        }
+        .Dbox1 {
+            width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+            border: red 1px solid;
+        }
+        .Dbox2 {
+            border: black 1px solid;
+            height: 100px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="Dbox1"></div>
+        <div class="Dbox2"></div>
+    </div>
+</body>
+</html>
